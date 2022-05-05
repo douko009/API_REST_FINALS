@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+
+<ul class="list-group-item" method="GET">
+    {{#each bookList}}
+    <li class="list-group-item">ID: {{this.id}} ||{{this.name}} : {{this.book}}, {{this.rating}} : {{this.date}} : {{this.email}}</li>
+    {{/each}}
+</ul>
+
+<br>
+<a href="http://localhost:8000/" class="btn btn-primary">BACK TO FORM</a>

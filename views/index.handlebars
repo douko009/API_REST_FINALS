@@ -1,0 +1,57 @@
+
+<h1>{{title}}</h1>
+
+
+<form action="/api/bookList" method="POST">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" class="form-control">
+
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" class="form-control">
+
+    </div>
+
+    <div>
+        <label for="date">Date of donation
+            <br>
+            <input type="date" class="from-control" name="date">
+        </label>
+    </div>
+    <div class="form-group">
+        Gender
+        <br>
+        <label for="gender">
+            Male
+        <input type="radio" name="gender" id="m" value="M">
+            Female
+        <input type="radio" name="gender" id="f" value="F">
+        </label>
+    </div>
+    <div class="form-group">
+        <label for="bookN">Book you are going to donate</label>
+        <input type="text" name="bookN" class="form-control">
+
+    </div>
+
+    <div class="form-group">
+        Book Rating
+        <br>
+        <label for="rating">
+            Kids
+        <input type="radio" name="rating" id="kids" value="-17">
+            Adults
+        <input type="radio" name="rating" id="adults" value="18+">
+        </label>
+    </div>
+
+
+    <input type="submit" value="Submit Donation" class="btn btn-primary btn-block">
+</form>
+
+<br>
+<a href="/api/bookList" class="btn btn-primary">VISIT API</a>
+<a href="/allData" class="btn btn-primary">REST</a>
+
